@@ -45,7 +45,7 @@ Now the game plan is, from the twitter-archive-enhanced.csv file, we will use tw
                 print('fail')
                 fail[id] = e
                 pass
-** Note that this will take a long time to run as twitter places a rate limit on the number of tweets that can be downloaded per minute. This should take around 30-45 minutes to complete. **
+**Note that this will take a long time to run as twitter places a rate limit on the number of tweets that can be downloaded per minute. This should take around 30-45 minutes to complete.**
 
 Next we will programmatically download the "image-predictictions.tsv" file which is tab-separated-file format, from a given URL. We do this by running the code below:
 
@@ -66,6 +66,9 @@ Now we load it into the IDE workspace:
     # load file and read as tsv
     df_prediction = pd.read_csv(filename, delimiter='\t' )
 
-## This completes the gathering task.
-## The assessing, and cleaning can be followed throughout the notebook
-The cleaned data frame ready for analysis is saved as CSV file called * "twitter_archive_master.csv" *
+#### This completes the gathering task.
+##### The assessing, and cleaning can be followed throughout the notebook
+##### The cleaned data frame ready for analysis is saved as CSV file called **"twitter_archive_master.csv"**
+
+##### A data wrangling report is provided as a PDF called **"wrangle_report.pdf"**
+##### After the analysis was done a report called **"wrangle_act.pdf"** is used to show some insights and visualizations generated
